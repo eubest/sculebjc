@@ -4,6 +4,9 @@
 
 .footer-inner {
   @apply px-6 border-l-0 border-r-0 sm:border-l-2 sm:border-r-2;
+  background-image: url("/footercard.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 @screen sm {

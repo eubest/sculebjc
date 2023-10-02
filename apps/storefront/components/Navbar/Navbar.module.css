@@ -1,5 +1,5 @@
 .navbar {
-  @apply bg-white text-main sticky top-0 z-50;
+  @apply bg-feb247 text-main sticky top-0 z-50;
 }
 
 .inner {
@@ -78,4 +78,22 @@
 
 .user-menu-item {
   @apply px-4 pt-[14px] pb-[13px] text-base font-medium cursor-pointer flex items-center whitespace-nowrap hover:text-brand;
+}
+
+
+.stamp {
+  fill: #feb247; /* Set the desired fill color here */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.stamp:hover {
+  transform: scale(1.2); /* Scale the logo by 1.1 (10% bigger) on hover */
+}
+.stampContainer {
+  display: inline-block; /* Ensure the container size matches the SVG size */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.stampContainer:hover {
+  transform: scale(1.3); /* Scale the container by 1.1 (10% bigger) on hover */
 }

@@ -38,8 +38,8 @@ export function Footer({ className, ...rest }: FooterProps) {
         <div className="flex mb-14 sm:mb-10">
           <Link href={paths.$url()} passHref legacyBehavior>
             <a href="pass" className="hidden sm:inline-block">
-              <div className="mt-px group block h-16 w-28 relative grayscale">
-                <Image src="/saleor.svg" alt="Saleor logo" layout="fill" />
+              <div className="relative w-[50rem] h-[30.5rem] relative grayscale">
+                <Image src="/sculenocolor.svg" alt="Saleor logo" layout="fill" />
               </div>
             </a>
           </Link>
@@ -103,12 +103,34 @@ export function Footer({ className, ...rest }: FooterProps) {
         </div>
         <div className="flex items-center">
           <p className="text-sm text-main-3 flex-grow">
-            © Copyright 2018 - {new Date().getFullYear()} Saleor Commerce
+            © Copyright 2023 - {new Date().getFullYear()} Scule BJC
           </p>
           <div className="invisible md:visible flex gap-4">
-            <ChannelDropdown horizontalAlignment="right" />
+          <ChannelDropdown horizontalAlignment="right" />
             <LocaleDropdown horizontalAlignment="right" />
           </div>
+        </div>
+        <div style={{ display: "flex" }}>
+          <a href="https://anpc.ro/ce-este-sal" target="_blank" rel="noreferrer">
+            <img
+              src="https://bjctools.ro/wp-content/uploads/2023/06/sal.svg"
+              width="250"
+              height="50"
+              alt="Image1"
+            />
+          </a>
+          <a
+            href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="https://bjctools.ro/wp-content/uploads/2023/06/soal.svg"
+              width="250"
+              height="50"
+              alt="Image2"
+            />
+          </a>
         </div>
       </Box>
     </footer>
