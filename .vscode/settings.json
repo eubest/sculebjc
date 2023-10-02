@@ -10,5 +10,8 @@
     "source.fixAll": true
   },
   "css.validate": true,
-  "editor.quickSuggestions": { "strings": true }
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "xml.downloadExternalResources.enabled": true
 }
