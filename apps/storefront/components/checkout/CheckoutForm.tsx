@@ -33,11 +33,11 @@ const sectionsManager = (checkout?: CheckoutDetailsFragment): CollapsedSections 
     return state;
   }
   state.shippingAddress = false;
-  if (checkout.isShippingRequired && !checkout.shippingAddress) {
+  if (!checkout.shippingAddress) {
     return state;
   }
   state.shippingMethod = false;
-  if (checkout.isShippingRequired && !checkout.shippingMethod) {
+  if (!checkout.shippingMethod) {
     return state;
   }
   state.payment = false;
@@ -62,12 +62,12 @@ export function CheckoutForm() {
         <BillingAddressSection active={!collapsedSections.billingAddress} checkout={checkout} />
       </div>
 
-      {checkout.isShippingRequired && (
+      {checkout.isShippingRequired (
         <div className="checkout-section-container">
           <ShippingAddressSection active={!collapsedSections.shippingAddress} checkout={checkout} />
         </div>
       )}
-      {checkout.isShippingRequired && (
+      {checkout.isShippingRequired (
         <div className="checkout-section-container">
           <ShippingMethodSection active={!collapsedSections.shippingMethod} checkout={checkout} />
         </div>
