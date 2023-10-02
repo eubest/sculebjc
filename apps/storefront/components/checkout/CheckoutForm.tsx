@@ -61,17 +61,12 @@ export function CheckoutForm() {
       <div className="checkout-section-container">
         <BillingAddressSection active={!collapsedSections.billingAddress} checkout={checkout} />
       </div>
-
-      {checkout.isShippingRequired && (
-        <div className="checkout-section-container">
-          <ShippingAddressSection active={!collapsedSections.shippingAddress} checkout={checkout} />
-        </div>
-      )}
-      {checkout.isShippingRequired && (
-        <div className="checkout-section-container">
-          <ShippingMethodSection active={!collapsedSections.shippingMethod} checkout={checkout} />
-        </div>
-      )}
+      <div className="checkout-section-container">
+        <ShippingAddressSection active={!collapsedSections.shippingAddress} checkout={checkout} />
+      </div>
+      <div className="checkout-section-container">
+        <ShippingMethodSection active={!collapsedSections.shippingMethod} checkout={checkout} />
+      </div>
       <div className="checkout-section-container">
         <PaymentSection active={!collapsedSections.payment} checkout={checkout} />
       </div>
